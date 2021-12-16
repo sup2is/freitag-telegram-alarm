@@ -58,7 +58,6 @@ if __name__ == '__main__':
     bot = telegram.Bot(token=my_token)
     chrome_ver = chromedriver_autoinstaller.get_chrome_version().split('.')[0]  # 크롬드라이버 버전 확인
     redis = redis.StrictRedis(host='localhost', port=6379, db=0)
-    sys.setrecursionlimit(10001)
 
     dict = {"miami": "https://www.freitag.ch/en/f52",
            "dragnet": "https://www.freitag.ch/en/f12",
